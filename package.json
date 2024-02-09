@@ -1,5 +1,11 @@
 {
   "name": "magadh-bookstore",
+  "version": "1.0.0",
+  "description": "Bookstore backend api",
+  "main": "index.ts",
+  "author": "Khushal-ag",
+  "license": "GPL-3.0-only",
+  "type": "module",
   "scripts": {
     "dev": "tsx watch src/index.ts",
     "fmt": "prettier --write . --cache",
