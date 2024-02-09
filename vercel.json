@@ -1,0 +1,16 @@
+{
+  "builds": [
+    {
+      "src": "/src/index.ts",
+      "use": "@vercel/node"
+    }
+  ],
+  "name": "magadh-bookstore-api",
+  "routes": [
+    {
+      "dest": "/src/index.ts",
+      "src": "/(.*)"
+    }
+  ],
+  "version": 2
+}
