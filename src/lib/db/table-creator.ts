@@ -8,5 +8,5 @@ import { env } from "../env";
  * @see https://orm.drizzle.team/docs/goodies#multi-project-schema
  */
 export const createTable = pgTableCreator(
-	(name) => `${env.DATABASE_NAME}_${name}`,
+  (name) => `${env.DATABASE_NAME}_${name}`
 );

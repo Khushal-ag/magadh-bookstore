@@ -7,9 +7,9 @@ import { routes } from ".";
 export const home = new Hono();
 
 home.get("/", async (c) => {
-	return c.json({
-		status: "SUCCESS",
-		message: "Welcome to Magadh Bookstore API!",
-		data: routes,
-	} satisfies ServerResponse);
+  return c.json({
+    status: "SUCCESS",
+    message: "Welcome to Magadh Bookstore API!",
+    data: routes,
+  } satisfies ServerResponse);
 });

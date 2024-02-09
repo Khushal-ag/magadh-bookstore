@@ -2,6 +2,8 @@
   "name": "magadh-bookstore",
   "scripts": {
     "dev": "tsx watch src/index.ts",
+    "fmt": "prettier --write . --cache",
+    "fmt:check": "prettier --check . --cache",
     "db:generate": "drizzle-kit generate:pg",
     "db:migrate": "tsx src/lib/db/migrate.ts",
     "db:drop": "drizzle-kit drop",
@@ -27,6 +29,14 @@
     "dotenv": "^16.4.1",
     "drizzle-kit": "^0.20.13",
     "pg": "^8.11.3",
+    "prettier": "^3.2.5",
     "typescript": "^5.0.0"
+  },
+  "prettier": {
+    "endOfLine": "lf",
+    "semi": true,
+    "singleQuote": false,
+    "tabWidth": 2,
+    "trailingComma": "es5"
   }
 }
