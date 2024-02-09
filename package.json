@@ -22,7 +22,8 @@
     "@hono/node-server": "^1.7.0",
     "@hono/zod-validator": "^0.1.11",
     "@t3-oss/env-core": "^0.8.0",
-    "bcryptjs": "^2.4.3",
+    "@types/bcrypt": "^5.0.2",
+    "bcrypt": "^5.1.1",
     "drizzle-orm": "^0.29.3",
     "hono": "^3.12.8",
     "postgres": "^3.4.3",
@@ -30,7 +31,6 @@
     "zod": "^3.22.4"
   },
   "devDependencies": {
-    "@types/bcryptjs": "^2.4.6",
     "@types/node": "^20.11.13",
     "dotenv": "^16.4.1",
     "drizzle-kit": "^0.20.13",

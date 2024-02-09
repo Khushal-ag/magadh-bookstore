@@ -3,7 +3,7 @@ import { sign } from "hono/jwt";
 import { deleteCookie, setCookie } from "hono/cookie";
 import { zValidator } from "@hono/zod-validator";
 import { randomUUID } from "crypto";
-import { compare, hash } from "bcryptjs";
+import { compare, hash } from "bcrypt";
 import { eq } from "drizzle-orm";
 
 import { db } from "@/lib/db";
