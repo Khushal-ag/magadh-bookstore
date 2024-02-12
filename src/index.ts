@@ -76,6 +76,4 @@ app.onError((err, c) => {
 
 showRoutes(app, { colorize: true });
 
-serve(app);
-
 export default app;

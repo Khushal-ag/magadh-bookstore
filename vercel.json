@@ -1,16 +1,41 @@
 {
-  "builds": [
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "rewrites": [
     {
-      "src": "/src/index.ts",
-      "use": "@vercel/node"
+      "source": "/(.*)",
+      "destination": "/api"
     }
   ],
-  "name": "magadh-bookstore-api",
-  "routes": [
+  "regions": ["bom1"],
+  "headers": [
     {
-      "dest": "/src/index.ts",
-      "src": "/(.*)"
+      "source": "(.*)",
+      "headers": [
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        },
+        {
+          "key": "Access-Control-Allow-Headers",
+          "value": "*"
+        },
+        {
+          "key": "Access-Control-Allow-Methods",
+          "value": "GET, OPTIONS"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "s-maxage=300, stale-while-revalidate"
+        },
+        {
+          "key": "Author",
+          "value": "Khushal-ag@github"
+        },
+        {
+          "key": "Github",
+          "value": "https://github.com/Khushal-ag/magadh-bookstore"
+        }
+      ]
     }
-  ],
-  "version": 2
+  ]
 }
