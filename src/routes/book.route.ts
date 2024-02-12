@@ -6,16 +6,16 @@ import {
   deleteBook,
   listBooks,
   updateBook,
-} from "@/lib/db/queries";
-import { authMiddleware, rbacMiddleware } from "@/lib/middleware";
-import { CustomError } from "@/lib/utils";
+} from "../lib/db/queries";
+import { authMiddleware, rbacMiddleware } from "../lib/middleware";
+import { CustomError } from "../lib/utils";
 import {
   deleteBookSchema,
   listBookSchema,
   newBookSchema,
   updateBookSchema,
-} from "@/lib/validations/book";
-import type { ServerResponse } from "@/types/server-response";
+} from "../lib/validations/book";
+import type { ServerResponse } from "../types/server-response";
 
 export const book = new Hono();
 

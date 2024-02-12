@@ -1,4 +1,4 @@
-import type { Role } from "@/lib/db/schema";
+import type { Role } from "../lib/db/schema";
 
 export type JwtPayload = {
   id: string;

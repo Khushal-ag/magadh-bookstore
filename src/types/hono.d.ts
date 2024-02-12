@@ -1,4 +1,4 @@
-import type { Role } from "@/lib/db/schema";
+import type { Role } from "../lib/db/schema";
 
 // TODO: unable to augment the jwtPayload type, it is still typed as any
 

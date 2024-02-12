@@ -1,7 +1,7 @@
 import type { MiddlewareHandler } from "hono";
 import { jwt } from "hono/jwt";
 
-import type { JwtPayload } from "@/types";
+import type { JwtPayload } from "../types";
 import { env } from "./env";
 import { type Permission, permissions as allPermissions } from "./permissions";
 

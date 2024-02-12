@@ -2,7 +2,6 @@ import { Hono } from "hono";
 import { cors } from "hono/cors";
 import { showRoutes } from "hono/dev";
 import { logger } from "hono/logger";
-import { serve } from "@hono/node-server";
 import { prettyJSON } from "hono/pretty-json";
 import { HTTPException } from "hono/http-exception";
 import { serveStatic } from "@hono/node-server/serve-static";

@@ -6,7 +6,6 @@ import {
   text,
   uuid,
 } from "drizzle-orm/pg-core";
-import { sql } from "drizzle-orm";
 
 import { createTable } from "./table-creator";
 

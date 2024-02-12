@@ -6,11 +6,11 @@ import { randomUUID } from "crypto";
 import { compare, hash } from "bcrypt";
 import { eq } from "drizzle-orm";
 
-import { db } from "@/lib/db";
-import { users } from "@/lib/db/schema";
-import { env } from "@/lib/env";
-import { authSchema, resetPasswordSchema } from "@/lib/validations/auth";
-import type { ServerResponse } from "@/types/server-response";
+import { db } from "../lib/db";
+import { users } from "../lib/db/schema";
+import { env } from "../lib/env";
+import { authSchema, resetPasswordSchema } from "../lib/validations/auth";
+import type { ServerResponse } from "../types/server-response";
 
 export const auth = new Hono();
 

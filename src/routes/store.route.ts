@@ -1,11 +1,11 @@
 import { Hono } from "hono";
 import { zValidator } from "@hono/zod-validator";
 
-import type { JwtPayload } from "@/types";
-import type { ServerResponse } from "@/types/server-response";
-import { buyBookSchema } from "@/lib/validations/store";
-import { authMiddleware, rbacMiddleware } from "@/lib/middleware";
-import { buyBook, updatePurchaseHistory } from "@/lib/db/queries";
+import type { JwtPayload } from "../types";
+import type { ServerResponse } from "../types/server-response";
+import { buyBookSchema } from "../lib/validations/store";
+import { authMiddleware, rbacMiddleware } from "../lib/middleware";
+import { buyBook, updatePurchaseHistory } from "../lib/db/queries";
 
 export const store = new Hono();
 

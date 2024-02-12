@@ -1,16 +1,16 @@
 import { Hono } from "hono";
 import { zValidator } from "@hono/zod-validator";
 
-import { authMiddleware, rbacMiddleware } from "@/lib/middleware";
-import { db } from "@/lib/db";
-import type { ServerResponse } from "@/types/server-response";
+import { authMiddleware, rbacMiddleware } from "../lib/middleware";
+import { db } from "../lib/db";
+import type { ServerResponse } from "../types/server-response";
 import {
   changeRoleSchema,
   deleteUserSchema,
   updateUserSchema,
-} from "@/lib/validations/user";
-import { changeRole, deleteUser, updateUser } from "@/lib/db/queries";
-import { CustomError } from "@/lib/utils";
+} from "../lib/validations/user";
+import { changeRole, deleteUser, updateUser } from "../lib/db/queries";
+import { CustomError } from "../lib/utils";
 
 export const user = new Hono();
 

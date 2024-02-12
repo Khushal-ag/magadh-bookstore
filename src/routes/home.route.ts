@@ -1,6 +1,6 @@
 import { Hono } from "hono";
 
-import type { ServerResponse } from "@/types/server-response";
+import type { ServerResponse } from "../types/server-response";
 
 import { routes } from ".";
 
